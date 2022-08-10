@@ -1,0 +1,68 @@
+<!doctype html>
+    <head>
+        <title>Weather App</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <meta name="description" content="This is a weather app where the user can find and check weather as well as upto 3 days of forecast through a city/country name">
+        <link rel="stylesheet" href="MCSS.css">
+    </head>
+    <body>
+        <center>
+            <video id="bgvid" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+                <source src="bgvid.mp4" type="video/mp4">
+            </video>
+            <div id="mainouter">
+                Weather
+            </div>
+            <div id="cityin">
+                <br>
+                <input id="cnammain" type="text"><br><br>
+                <input  id ="but" type="button" onclick="get()" value="Check Weather">
+            </div>
+            <div id="wait"></div>
+            <div id="cityname">
+                City<br>
+            </div>
+            <div id="icon">
+                <img id = "icons" src="" alt="W_ICON">
+            </div>
+            <div id="curtemp">
+                --
+            </div>
+            <div id="typelowhigh">
+                weatherType<br><br>
+                Low &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; High
+                <br><br>
+            </div>
+            <div id="latlon">
+                lat:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;long:<br><br>
+            </div>
+            <div id="feels">
+                feels like:<br>
+            </div>
+            <div id="humid">
+                humidity:<br>
+            </div>
+            <div id="pres">
+                pressure:<br><br><br><br><br>
+            </div>
+            <div id="forecast">
+                3 day forecast<br><br>
+            </div>
+            <div id="forebg">
+                <div id="fore1">
+                    <div id="f1">day1</div><img id="i1" src="" alt="icon"><div id="t1">temp1</div>
+                </div>
+                <div id="fore2">
+                    <div id="f2">day2</div><img id="i2" src="" alt="icon"><div id="t2">temp2</div>
+                </div>
+                <div id="fore3">
+                    <div id="f3">day3</div><img id="i3" src="" alt="icon"><div id="t3">temp3</div>
+                </div>
+                <br><br><br>
+            </div>
+        </center>
+    </body>
+    <script src="script.js"></script>
+</html>
